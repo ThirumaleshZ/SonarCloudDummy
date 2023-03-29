@@ -8,11 +8,9 @@ interface ButtonChipProps {
 const ButtonChip = ({ text, onClickHandler }: ButtonChipProps) => {
   return (
     <Chip
-      // color="success"
       label={text}
       onClick={() => {
         onClickHandler();
-        console.log("chip clicked");
       }}
       variant="outlined"
       sx={{
