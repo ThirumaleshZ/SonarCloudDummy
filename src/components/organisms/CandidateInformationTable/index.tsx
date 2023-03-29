@@ -29,7 +29,6 @@ const CandidateInformationTable = ({
 }: CandidateInformationTableProps) => {
   const [candidateInfoArray, setCandidateInfoArray] =
     useState<CandidateInformation[]>(candidateInfo);
-  // useEffect(() => {}, [candidateInfoArray]);
 
   useEffect(() => {
     console.log("updated");
@@ -73,7 +72,6 @@ const CandidateInformationTable = ({
         </TableHead>
         <TableBody>
           {candidateInfoArray.map((row) => {
-            // console.log(row);
             return (
               <TableRow key={`candidate${row.id}`}>
                 <TableCell sx={{ color: "primary.main" }}>{row.name}</TableCell>
